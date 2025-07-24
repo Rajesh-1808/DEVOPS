@@ -73,7 +73,7 @@ Benefits of DevOps:
 -------------------
 1. Faster time-to-market(You can release features quickly)
 2. Better Quality(Automated testing reduce bugs)
-3. Stable systems (Monitoring and quick recovery)
+3. Stable systems (Monitoring(Proactive & Reactive) and quick recovery)
 4. Cost efficiency(Fewer production issues)
 5. Happier teams and customer satisfaction(less stress, more ownership)
 6. Early bug detection
