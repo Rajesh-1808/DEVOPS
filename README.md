@@ -44,13 +44,11 @@ End Result: Customers are happy,food get delivered on time
 Why DevOps is important?
 ------------------------
 
-Without Devops 							                                               With DevOps
----------------                                                            -------------
-you cook, others don't know what's cooking		                	        Everyone helps prepare and serve
-
-you pack late, delivery is delayed		                                  packing and delivery is automated
-
-you don't know if customers got the food	                      	      You get live delivery feedback
+Without Devops 					     |		      With DevOps
+-----------------------------------------------------|----------------------------------------------------------
+you cook, others don't know what's cooking	     |	       Everyone helps prepare and serve
+you pack late, delivery is delayed		     |          packing and delivery is automated
+you don't know if customers got the food	     |          You get live delivery feedback
 
 
 
