@@ -285,7 +285,7 @@ CI/CD:
 -----
 -> Set of practices to automate building, testing and releasing software quickly and reliably
 	
-Principles of CI/CD			|		Meaning
+  Principles of CI/CD			|		Meaning
 ----------------------------------------|----------------------------------------------------------------
 1. Frequent Code Integration(CI)	|	Developer merge code to a shared repository mutiple times
 2. Automated Testing			|	Code is automatically tested every time it changes
@@ -295,7 +295,8 @@ Principles of CI/CD			|		Meaning
 6. Rollback and Recovery		|	can easily undo a bad release
 7. Continous deployment                 | 	code is automatically pushed to production after all tests gets passed
 
-
+Are the Strategies
+------------------
 =================
 
 CICD strategies:
