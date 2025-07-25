@@ -279,6 +279,16 @@ Responsibilities of SRE:
 4.Improves system scalability and performance
 5.Security and Complaince
 
+   Principle			|			Description
+--------------------------------|----------------------------------------------------------------
+Embrace Risk			|	Use error budgets to balance speed and safety
+SLOs, SLIs, SLAs		|	Set clear targets for reliability
+Eliminate Toil			|	Automate repetitive manual tasks
+Monitoring & Observability	|	Understand system behavior in real time
+Automate Everything		|	Use tools/scripts to manage operations
+Incident Management		|	Handle failures and learn from them
+Simplicity			|	Build systems that are easy to understand
+
 =====================================================================================
 
 CI/CD:
