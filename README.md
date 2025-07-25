@@ -6,28 +6,26 @@ What is DevOps?
 DevOps is a combination of Development (Dev) and Operations (Ops).
 It is a culture, set of practices, and tools that helps organizations:
 
--> Deliver software faster
--> Automate processes
--> Improve collaboration between teams
+- Deliver software faster
+- Automate processes
+- Improve collaboration between teams
 
 ====================================================================================
 
 Software -> Application -> Source Code
-	->Helping automate business
+	- Helping automate business
 	
  Small online tiffin service[Food Ordering website]
  ==================================================
 
 Without Devops:
 --------------
--> Developer
--> Upload to the site(application,code) to a server(Operations)
--> works on Developer laptop, but crashes on the server
--> waiting for 2 weeks to fix a small change like 'add paytm payments'
+- Developer
+- Upload to the site(application,code) to a server(Operations)
+- works on Developer laptop, but crashes on the server
+- waiting for 2 weeks to fix a small change like 'add paytm payments'
 
 Result :  Delays,frustration,blame
-
-
 
 What DevOps Brings to this situation
 -------------------------------------
@@ -100,29 +98,29 @@ CI/CD	:
 	
 Continuos Integration(CI):
 --------------------------
-
--> Developers frequently merge or push (integrate) their code into a shared repository (like GitHub).
--> An automated build/test process checks for errors
--> Goal: Detect/Catch bugs early and keeping the code in a deployable state
+- Developers frequently merge or push (integrate) their code into a shared repository (like GitHub).
+- An automated build/test process checks for errors
+- Goal: Detect/Catch bugs early and keeping the code in a deployable state
 		
 Continuos Delivery/Deployment(CD):
 ---------------------------------
--> Automatically deploy the tested code to production environment
--> Goal: faster and reliable release
+- Automatically deploy the tested code to production environment
+- Goal: faster and reliable release
 		
 Realtime tools:
-			Github/Gitlab - Code repository
-			Jenkins/Githubactions - CI/CD pipelines
-			Docker -  Packaging apps
-			Kubernetes/AWS/GCP  - Deployment platforms
+---------------
+- Github/Gitlab - Code repository
+- Jenkins/Githubactions - CI/CD pipelines
+- Docker -  Packaging apps
+- Kubernetes/AWS/GCP  - Deployment platforms
 
-✅ Benefits of CI/CD:
+Benefits of CI/CD:
 --------------------
--> Faster and safer code delivery
--> Fewer bugs in production
--> Less manual work
--> Consistent deployment process
--> Quick feedback to developers
+- Faster and safer code delivery.
+- Fewer bugs in production.
+- Less manual work
+- Consistent deployment process
+- Quick feedback to developers
 
 Examples :
 ---------
@@ -282,11 +280,11 @@ SLI (Service Level Indicator) – actual measurement (e.g., response time)
 
 Responsibilities of SRE:
 -----------------------
-	1.Ensuring system reliability (Maintain uptime, performance and availability).
-	2.Define and Monitor SLA,SLO,SLI.
-	3.Automation of operations.
-	4.Improves system scalability and performance.
-	5.Security and Complaince.
+1. Ensuring system reliability (Maintain uptime, performance and availability).
+2. Define and Monitor SLA,SLO,SLI.
+3. Automation of operations.
+4. Improves system scalability and performance.
+5. Security and Complaince.
 
 
    Principle			|			Description
