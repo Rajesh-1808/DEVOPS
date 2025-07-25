@@ -166,9 +166,9 @@ A new batch of students
 It takes almost a week to setup the infrastructure(machines)
 	
 Instead, I will write a program(Scripts)
-	Language is YAML,JSON kind of languages
+	-Language is YAML,JSON kind of languages
 	-"Install windows, enable firewall, install antivirus, block youtube,facebook"
-	Now run that program - in 10 mins wholoe 200 machines are ready!!!
+	-Now run that program - in 10 mins wholoe 200 machines are ready!!!
 		
 That's what is IaC for your infrastructure(Servers)
 		
@@ -189,20 +189,31 @@ Hard to scale				|			one script - 200 machines
 		
 Server
 	- Computer, VM[Machines]
-	- Software [Yes]
-	
-Machine 
-	- Web Server
-		- hosting a web application 
-	- Database server
-		- hosting huge data
-		
+	- Software [Yes]	
+-> Machine hosting a web application - Web Server	
+-> Machine hosting huge data - Database server
+				
 Go to a restaurant and order Dosa
 	. You - client
 	. Kitchen - Servers
 	. Order(Request) - Http Request
 	. Dosa (Response) - Webpage, file
-			
+
+DEVSECOPS:
+=========
+Scanning of code using SonarQube for vulnerbailities.
+Coding, Deployment to server.
+-> Security - Application (trading app) security.
+
+Vulnerbilities:
+---------------
+1. Username password - shouldn't be exposed.
+2. Code - Hardcode password.
+3. Weak Password
+4. Poor Access Control
+5. Not allowing developers to write insecure code
+6. Unwanted user is trying to access your server [Hacking]
+
 =====================================================================================
    
 SRE - Site Reliability Engineering
@@ -271,11 +282,11 @@ SLI (Service Level Indicator) – actual measurement (e.g., response time)
 
 Responsibilities of SRE:
 -----------------------
-	1.Ensuring system reliability (Maintain uptime, performance and availability)                											
-   	2.Define and SLA,SLO,SLI																			
-   	3.Automation of operations																			
-   	4.Improves system scalability and performance																	
-  	5.Security and Complaince
+	1.Ensuring system reliability (Maintain uptime, performance and availability).
+	2.Define and SLA,SLO,SLI.
+	3.Automation of operations.
+	4.Improves system scalability and performance.
+	5.Security and Complaince.
 
 
    Principle			|			Description
