@@ -246,11 +246,12 @@ SRE Tools:
 3. Logging - Splunk ,ELK (Used for: Understanding what happened during failures.)
 4. Automation - Ansible , Terraform (Used for: Automating deployment, scaling, and infrastructure provisioning.)
 
-Devops - "Let's build and release software efficiently"
-SRE = "Let's ensure it runs smoothly , all the time"
 
-Devops emphasize on speed + automation
-SRE emphasize on stability + reliability
+-> Devops - "Let's build and release software efficiently"
+-> SRE = "Let's ensure it runs smoothly , all the time"
+
+-> Devops emphasize on speed + automation
+-> SRE emphasize on stability + reliability
 
  DevOps	 						  |			SRE
 ----------------------------------------------------------|-------------------------------------------------------------
