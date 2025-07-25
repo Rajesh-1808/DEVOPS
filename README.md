@@ -270,12 +270,13 @@ SLO (Service Level Objective) – internal goal (e.g., 99.9% uptime)
 SLI (Service Level Indicator) – actual measurement (e.g., response time)
 
 Responsibilities of SRE:
-------------------------
-   1.Ensuring system reliability (Maintain uptime, performance and availability)                											
-   2.Define and SLA,SLO,SLI																				
-   3.Automation of operations																				
-   4.Improves system scalability and performance																	
-   5.Security and Complaince																				
+-----------------------
+	1.Ensuring system reliability (Maintain uptime, performance and availability)                											
+   	2.Define and SLA,SLO,SLI																			
+   	3.Automation of operations																			
+   	4.Improves system scalability and performance																	
+  	5.Security and Complaince
+
 
    Principle			|			Description
 --------------------------------|----------------------------------------------------------------
