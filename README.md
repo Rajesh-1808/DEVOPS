@@ -239,13 +239,12 @@ SRE would
 	- Set Alerts if CPU usage > 80%
 	- Track SLOs (eg 99.99% uptime goal)
 
-SRE Tools	
-	1. Monitoring - Prometheus, Grafana
-	2. Alerting - AlertManager, PagerDuty
-	3. Loggin - Splunk ,ELK
-	4. Automation - Ansible , Terraform
- 	5. SLO Dashboards
-  	6. Error budget tracking
+SRE Tools:
+----------
+1. Monitoring - Prometheus, Grafana (Used for: Tracking uptime, response times, error rates, etc.)
+2. Alerting - AlertManager, PagerDuty (Used for: Notifying the right people when something breaks.)
+3. Logging - Splunk ,ELK (Used for: Understanding what happened during failures.)
+4. Automation - Ansible , Terraform (Used for: Automating deployment, scaling, and infrastructure provisioning.)
 
 Devops - "Let's build and release software efficiently"
 SRE = "Let's ensure it runs smoothly , all the time"
