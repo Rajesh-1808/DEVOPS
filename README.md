@@ -288,17 +288,11 @@ CI/CD:
 Principles of CI/CD			|		Meaning
 ----------------------------------------|----------------------------------------------------------------
 1. Frequent Code Integration(CI)	|	Developer merge code to a shared repository mutiple times
-----------------------------------------|----------------------------------------------------------------					
 2. Automated Testing			|	Code is automatically tested every time it changes
-----------------------------------------|----------------------------------------------------------------					
 3. Automated Build			|	After testing, the app is compiled and packaged automatically
-----------------------------------------|----------------------------------------------------------------					
 4. Continuos delivery			|	code is ready for deployment
-----------------------------------------|----------------------------------------------------------------					
 5. Fast feedback			|	Developer gets alert if something fails
-----------------------------------------|----------------------------------------------------------------					
 6. Rollback and Recovery		|	can easily undo a bad release
-----------------------------------------|----------------------------------------------------------------					
 7. Continous deployment                 | 	code is automatically pushed to production after all tests gets passed
 
 
