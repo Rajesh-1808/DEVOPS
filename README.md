@@ -156,6 +156,195 @@ III. Mobile App Updates :
 ==========================================================================================================================================================================
 	
 
+IaC - Infrastructure as Code
+============================
+
+College 
+	- Computer lab and admin
+A new batch of students
+	- setup a physical computer
+	- Manually install windows
+	- setup antivirus, software,network	
+It takes almost a week to setup the infrastructure(machines)
+	
+Instead, I will write a program(Scripts)
+	Language is YAML,JSON kind of languages
+	-"Install windows, enable firewall, install antivirus, block youtube,facebook"
+	Now run that program - in 10 mins wholoe 200 machines are ready!!!
+		
+That's what is IaC for your infrastructure(Servers)
+		
+Tools used:
+	. Terraform 
+	. AWS cloud formation
+
+Benefits of IaC:
+---------------
+
+Manual Setup 				|			IaC
+----------------------------------------|------------------------------------------------------
+Click,click, forget settings		|		Script(program) remembers everything
+Error happen ofen			|			Reproducible and reliable
+Time consuming				|			Automated
+Hard to scale				|			one script - 200 machines
+					
+		
+Server
+	- Computer, VM[Machines]
+	- Software [Yes]
+	
+Machine 
+	- Web Server
+		- hosting a web application 
+	- Database server
+		- hosting huge data
+		
+Go to a restaurant and order Dosa
+	. You - client
+	. Kitchen - Servers
+	. Order(Request) - Http Request
+	. Dosa (Response) - Webpage, file
+			
+=====================================================================================
+   
+SRE - Site Reliability Engineering
+==================================
+SRE is about using code to manage and automate operations, ensuring systems stay up, run fast, and recover quickly.
+
+Practice
+-> Maintains the reliablity, availablity and performance of systems(set of servers)
+	Reliable (doesn't crash frequently)
+	Available (Users can access it anytime)
+	Performant (responds quickly)
+	SRE = Making sure website/apps work all the time, and work fast
+	
+	IRCTC
+	Railway system = servers + application
+	passengers = users
+	Train Control system = SRE team
+		- IRCTC to book a train ticket
+		- Site crash or service unavailable
+	SRE steps in
+		- Automate operations like monitoring, alerting and scaling
+		- track uptime and error rates		
+
+	Managing a water purifier plant 
+		- ensure clean water is available 24x7
+		- if pressure drops or TDS increases an alarm goes off
+		- you fix before people complain it
+
+		
+SRE would
+	- Add autoscaling more servers spin up when traffic spikes
+	- Set Alerts if CPU usage > 80%
+	- Track SLOs (eg 99.99% uptime goal)
+
+SRE Tools	
+	1. Monitoring - Prometheus, Grafana
+	2. Alerting - AlertManager, PagerDuty
+	3. Loggin - Splunk ,ELK
+	4. Automation - Ansible , Terraform
+ 	5. SLO Dashboards
+  	6. Error budget tracking
+
+Devops - "Let's build and release software efficiently"
+SRE = "Let's ensure it runs smoothly , all the time"
+
+Devops emphasize on speed + automation
+SRE emphasize on stability + reliability
+
+ DevOps	 						  |			SRE
+----------------------------------------------------------|-------------------------------------------------------------
+A culture to improve collaboration between dev & ops	  |      An engineering approach to operations reliability
+Faster delivery + automation + collaboration	          |  	System reliability, uptime, and performance
+Broad (includes CI/CD, IaC, Monitoring)			  |		Focused on SLAs, incident response, and automation
+Jenkins, Docker, Terraform, GitHub, etc.		  |	SLOs, SLIs, Error Budgets, Monitoring, Alerting
+
+Swiggy:
+------
+-> DevOps helps you deploy updates fast and automate the process
+-> SRE makes sure the app stays available, fast, and reliable even during peak traffic
+
+SLA (Service Level Agreement) – what you promise to users
+
+SLO (Service Level Objective) – internal goal (e.g., 99.9% uptime)
+
+SLI (Service Level Indicator) – actual measurement (e.g., response time)
+
+Responsibilities of SRE:
+------------------------
+1.Ensuring system reliability (Maintain uptime, performance and availability)
+2.Define and SLA,SLO,SLI
+3.Automation of operations
+4.Improves system scalability and performance
+5.Security and Complaince
+
+=====================================================================================
+
+CI/CD:
+-----
+-> Set of practices to automate building, testing and releasing software quickly and reliably
+	
+Principles of CI/CD			|		Meaning
+----------------------------------------|----------------------------------------------------------------
+1. Frequent Code Integration(CI)	|	Developer merge code to a shared repository mutiple times
+					|
+2. Automated Testing			|	Code is automatically tested every time it changes
+					|
+3. Automated Build			|	After testing, the app is compiled and packaged automatically
+					|
+4. Continuos delivery			|	code is ready for deployment
+					|
+5. Fast feedback			|	Developer gets alert if something fails
+					|
+6. Rollback and Recovery		|	can easily undo a bad release
+					|
+7. Continous deployment                 | 	code is automatically pushed to production after all tests gets passed
+
+=================
+
+CICD strategies:
+----------------
+1. start with continuos integraion
+	- Developers push code to GithUb
+	- pipeline(Jenkins) run unit tests automatically
+- Goal: Catch bugs early, ensure team code works together.
+	 
+2. Add testing and quality gates
+		- tools like SonarQube or JUnit to check
+				* Bugs
+				* Code Quality
+				* Security vulnerabilities
+- Goal: Ensure only high-quality, secure code moves forward.
+
+3. Add Continous Delivery
+		- Code that passes all checks is deployed to staging server(Testing environment)
+- Goal: Always have a release-ready build with safe, manual control.
+   
+4. Move to Continous deployment
+	- Auto-deploy to production if all test passes
+- Goal: Deliver features to users quickly, with full automation.	
+
+==========================================================================================================================================================================
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+	
+
+
+
+
+			
 
 
 
