@@ -340,9 +340,37 @@ CICD strategies:
 
 ==========================================================================================================================================================================
 	
+JENKINS INSTALLATION : 
+====================
+CICD pipeline - tool Jenkins
+	- Build
+ 	- Test 
+  	- Deploy
 	
 	
+1. JDK 17
+2. Admin access on your windows machine
+3. Set JAVA_HOME and set path environment variable
+4. Download the jenkins from https://www.jenkins.io/download
+5. download the  .msi installer(Windows installer)
+6. Install Jenkins as a Windows Service
+7. Unlock Jenkins initial setup
+	http://localhost:8080
+8. you'll see a screen asking for the administrator password
+9. Go to C:\Program Files\Jenkins\secrets\initialAdminPassword
+		open the file and copy the password
+		paste it into the browser to unlock Jenkins
+10. Install Suggested plugins[Recommended]
+11. Create First Admin user
+	Provide
+		- Username
+		- Password
+		- FullName
+		- Email
+	Click Save and Finish
+12. Jenkins Dashboard - http://localhost:8080	
 	
+============================================================	
 	
 
 
