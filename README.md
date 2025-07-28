@@ -374,12 +374,35 @@ CICD pipeline - tool Jenkins
 
 Vagrant Commands:
 =================
+For windows:
+------------
 1. VBoxManage --version
 2. vagrant --version
 3. mkdir test-vm
 4. cd test-vm
 5. vagrant init hashicorp/bionic64
 6. vagrant up
+
+For Mac:
+--------
+1. vagrant --version
+2. mkdir test-vm
+3. cd test-vm
+4. nano Vagrantfile
+   code :
+   # Vagrantfile
+
+Vagrant.configure("2") do |config|
+  config.vm.provider "docker" do |d|
+    d.image = "rastasheep/ubuntu-sshd:22.04"
+    d.remains_running = true
+  end
+
+  config.vm.hostname = "docker-vm"
+  config.vm.network "forwarded_port", guest: 22, host: 2222
+end
+5. vagrant up --provider=docker
+6. vagrant ssh
 
 =============================================
 	
