@@ -370,7 +370,18 @@ CICD pipeline - tool Jenkins
 	Click Save and Finish
 12. Jenkins Dashboard - http://localhost:8080	
 	
-============================================================	
+========================================================================================================================
+
+Vagrant Commands:
+=================
+1. VBoxManage --version
+2. vagrant --version
+3. mkdir test-vm
+4. cd test-vm
+5. vagrant init hashicorp/bionic64
+6. vagrant up
+
+=============================================
 	
 
 
