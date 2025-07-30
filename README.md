@@ -477,11 +477,37 @@ Virtualization:
 	- If VM has damaged it does not effect our host Machines or our main os
   	- Learn and Experiment
   	- Test your app on different OS
+- Why are comapnies adopting virtualization?
+  	- Abstraction of the OS from the hardware
+  	- Backups of entire OS
+  	- Secure
+  	- Portable
+  	- Not Dependant
 
+Linux File System:
+------------------
+1. Heirarchical Tree Structure
+2. Each user has its own place and configuration if multiple users
+3. Programs installed system wide are available for all users on that computer including applications and commands
+4. Binary : Compuyter readable format (bin : cp, mv, etc)
+5. System related commands (sbin : adduser, pswd, etc)
+6. All users on the sytsem can use the installed applications (usr : bin, sbin, lib, etc)
+7. Third party programs (opt)
+8. Applications like Docker, java, python (local)
+9. Contains files required for booting (boot) it is onky for system nit for users
+10. System-wide Configurations are stored (etc)
+11. Location of devices (dev : Drivers)
+12. Contains log files (var -> log)
+13. External media (media)
+14. Hidden files are also called as Dot files in UNIX(.dot) they are automatically generated at the time of installing applications.
 
-
-	
-
+GUI vs CLI
+----------
+- GUI = A graphical user interface, where we have graphical elements that you can interact with, like buttons (terminal) (not on servers)
+- CLI = Command line interface, where users type in commands and see the results on the screen (Command prompt) (present on servers)
+- Terminal = The GUI window that you see on the screen. It takes commands and shows output.
+- $ means normal user
+- # means root user
 
 
 
