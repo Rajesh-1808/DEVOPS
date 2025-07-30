@@ -431,8 +431,55 @@ Vagrant.configure("2") do |config|
 end
 5. vagrant up --provider=docker
 6. vagrant ssh
+7. It is used to connect to the VM through Vagrant and acces the linux to work on the commands.
 
-=============================================
+=======================================================================================================================================
+
+Operating System:
+=================
+- An Operating System is software that manages computer hardware and software resources, providing common services for computer programs.
+- It is mainly used to do the communication between the hardware and the applications (translator)
+- Managers resources among applications
+- Isolates the contents of the application or resource management
+
+Tasks of an OS:
+---------------
+1. Resource Allocation and Management (Process management, Memory management, Storage management
+2. Manage File System
+3. Management of I/O Devices
+4. Security and Networking
+
+OS Components:
+-------------
+- Hardware
+- Kernel (different for each device like MacOS :Darwin and Android : Linux)
+- Application layers
+- User Apps
+
+===================================================
+
+Linux :
+======
+- Mostly used OS for servers
+- Knowing Linus is must for Devops Engineer
+	- You need to work with servers
+   	- Installing and configuring servers
+   	- Lunix native Technologies (Ubuntu is most popularly used)
+
+Virtualization:
+==============
+- No separate hardware needed beacause we use Virtual Machine: that is we can use windows+Linus or Mac+Linus
+- The VM's can be accessed through Hypervisor(Virtual Box)
+- VirtualBox takes hardware resources from Host OS
+- Creates virtual CPU, virtual RAM, virtual storage for each virtual machine
+- Hardware resources are shared
+- Virtual Machines are completely isolated (Dont see Each other) 
+	- If VM has damaged it does not effect our host Machines or our main os
+  	- Learn and Experiment
+  	- Test your app on different OS
+
+
+
 	
 
 
