@@ -1,6 +1,22 @@
 # DEVOPS
 Devops Notes
 
+Complete software development process:
+-------------------------------------
+-> Example : facebook 
+1. Programing : program written in programming languages, new funtionality, fix bugs
+2. Software testing : new features, old code functionality, testers and developers test and automated testing
+3. Release of software : build application, run on servers, upgrade existing software
+4. Operations : run software in production
+
+Traditional Development vs Operations :
+--------------------------------------
+- Development -> Release -> Operations
+- Development team handle the development and testing  : programming languages, DB etc
+- Operations team handle no downtime and handle huge traffic : OS, Linux, Scripts etc
+- There is no proper communication between the Devolopment and the operations team.
+Result : the solution is Devops Culture
+
 What is DevOps?
 ==============
 DevOps is a combination of Development (Dev) and Operations (Ops).
@@ -11,6 +27,17 @@ It is a culture, set of practices, and tools that helps organizations:
 - Improve collaboration between teams
 
 ====================================================================================
+
+Waterfall vs Agile:
+===================
+Traditional waterfall       |             Agile Methodology
+----------------------------|---------------------------------------    	
+1. Requirements		    |		Define 
+2. Development		    |		Analyze
+3. Testing		    |		Test (CI/CD)
+4. Operations		    |		Design and Deploy
+5. Ineffective process	    |		Effective process
+6. more time		    |		Less time
 
 Software -> Application -> Source Code
 	- Helping automate business
