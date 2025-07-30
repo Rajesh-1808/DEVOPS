@@ -32,12 +32,12 @@ Waterfall vs Agile:
 ===================
 Traditional waterfall       |             Agile Methodology
 ----------------------------|---------------------------------------    	
-1. Requirements		    |		Define 
-2. Development		    |		Analyze
-3. Testing		    |		Test (CI/CD)
-4. Operations		    |		Design and Deploy
-5. Ineffective process	    |		Effective process
-6. more time		    |		Less time
+Requirements		    |		Define 
+Development		    |		Analyze
+Testing		    	    |		Test (CI/CD)
+Operations		    |		Design and Deploy
+Ineffective process	    |		Effective process
+More time		    |		Less time
 
 Software -> Application -> Source Code
 	- Helping automate business
