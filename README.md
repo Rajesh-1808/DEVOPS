@@ -461,6 +461,7 @@ OS Components:
 Linux :
 ======
 - Mostly used OS for servers
+- Everything in linux is a file
 - Knowing Linus is must for Devops Engineer
 	- You need to work with servers
    	- Installing and configuring servers
@@ -506,8 +507,98 @@ GUI vs CLI
 - GUI = A graphical user interface, where we have graphical elements that you can interact with, like buttons (terminal) (not on servers)
 - CLI = Command line interface, where users type in commands and see the results on the screen (Command prompt) (present on servers)
 - Terminal = The GUI window that you see on the screen. It takes commands and shows output.
-- $ means normal user
-- # means root user
+- There are 3 types of user in Linux : 
+- $ means normal user (Standard user)
+- # means root user Super user (administrator)
+- Service user (Linux server distributors)
+
+Directory Functions:
+--------------------
+1. pwd - show current directory (present working directory)
+2. ls - list
+3. cd - change directory
+4. mkdir - make directory
+5. touch - create a file which is empty
+6. rm - remove file
+7. rmdir (rm -r) - remove directory
+8. cd .. - back to home directory or main folder
+9. cd / - going to root folder
+10. clear - clean terminal
+11. cd ~ - home directory
+12. mv - moving files from folder to folder
+13. cp - copyt file
+14. ls -R - documents in every directory come
+15. history - command you used in that session
+16. ctrl + r (keys) - search for commands
+17. ctrl + c (keys) - kill current command
+18. history 20 - gives last 20 commands
+19. ls -a - all the files and folders are displayed including hidden files
+20. cat - display file content
+21. uname -a - show system and kernel
+22. adduser - to add a user or create a new user
+23. sudo - Allows regular users to run programs with the security privilages of the superuser or root
+24. groupadd - to create a group or add group
+25. su - admin - used to sign as admin user (change admin to username for switching users)
+26. apt - used to install softwares
+27. apt update - used to update the applications
+28. nano - used to create and edit the content in a file
+29. passwd - change password for user
+30. deluser - to delete a user
+31. sudo usermod -g devops tom - makes devops primary group to tom
+32. delgroup - delete the group
+33. sudo usermod -G admin tom - to make tom admin
+34. groups - displays the groups that the user is a member
+
+When to use CLI over GUI?
+-----------------------
+- Work more efficient
+- Easir for bulk operations like create, move, etc
+- CLI is more powerful
+
+How to install software on Linux?
+--------------------------------
+- Using a package manager
+	- Software package contains all the dependencies required by the software in different files and folders
+   	- downloads, updates and installs all the required files and dependencies for the software
+   	- Easy upgrading of the software
+   	- Package manager is in-built in Linux (ubuntu : apt - advance package tool)
+   	- Pacakge manager fetches the packages from Repository(warehouse) this is most popularly used by Linux
+ - sudo apt - for installation of software from root
+ - sudo apt remove - for uninstalling of software from root
+ - apt-Get is also a package manager but some complicated than apt because apt is more user friendly
+ - apt is mostly used package manager in Linux. apt dependencies are shared and has manual updates and smaller installation sizes than any other package managers
+ - intellijIDEA and snap are alternate package manager for Linux id apt doesn't work
+ - Debian based : Ubuntu, Debian, Mint :- apt, apt-get
+ - Red had based : RHEL, CentOS, Fedora :- yum
+
+VIM editor:
+----------
+- It is an in-built Unix text editor
+- It is popularly called as VI(visual instrument) or VIM(modified version of VI)
+- Used in CLI
+	- Faster to create and edit at same time
+ 	- Supports multiple formats
+    	- Small modifications can be faster
+- sudo apt install vim - to install the vim
+- vim has 2 modes
+  	1. Command mode : default, cant edit text
+  	   	- dd - delete an entire line
+  	   	- d10 + d -  to delete 10 line
+  	   	- u - undo the changes
+  	   	- A - Jumping to the end of the line of program
+  	   	- 0 - Jumping to the begining of the line of program
+  	   	- $ - end of the line
+  	   	- 12G - to goto line 12
+  	   	- /pattern - to search in the editor(pattern place name what you want to serach)
+  	   	- n - jump to next match
+  	   	- N - search in opposite direction
+  	   	- :%s/old/new - replace the string old with new throughout the file
+  	   	- :wq - to write, save and quit
+  	2. Insert mode : allows to enter text. By pressing i on opening the file in vim we enter into the insert mode
+- You can create any kind of file format by using this text editor
+
+
+
 
 
 
