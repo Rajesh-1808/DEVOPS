@@ -637,7 +637,7 @@ VIM editor:
 
 Shell Scripting:
 ===============
-- It caontains a bunch of commands in file that need to be executed at a time to avoid repetitive work and those commands can be shared just by sharing the file. Such files are called as Shell Scripts.
+- It contains a bunch of commands in file that need to be executed at a time to avoid repetitive work and those commands can be shared just by sharing the file. Such files are called as Shell Scripts.
 - Shell scripts have .sh file externsion
 - Shell : The program that interprets and executes the various commands that we type in the terminal and translates our command that the OS kernel can understand
 - sh : Bourne shell
