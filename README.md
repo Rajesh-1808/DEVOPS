@@ -501,6 +501,7 @@ Linux File System:
 12. Contains log files (var -> log)
 13. External media (media)
 14. Hidden files are also called as Dot files in UNIX(.dot) they are automatically generated at the time of installing applications.
+15. Every files has 2 owners one is user and the group
 
 GUI vs CLI
 ----------
@@ -548,7 +549,42 @@ Directory Functions:
 32. delgroup - delete the group
 33. sudo usermod -G admin tom - to make tom admin
 34. groups - displays the groups that the user is a member
+35. ls -l - print files in a long list format
+36. chown <username>:<groupname> <filename> - used to change owner
+37. chgrp : used to change group
+38. chmod -x <filename> - to change file to executable file
+39. chmod g-w & g+w - removing and adding group write permissions
+40. | - pipe command : it is the concept of passing the output to next command
+41. grep - globally stand for Regualar expression and print. Search for a particular pattern of characters and display all lines that contain the pattern
+42. history | grep sudo - gives all the commands that has sudo
+43. > - redirector operator, we can move the commands to new file (history | grep sudo > sudo-commands.txt - all these sudo commands are moved and redirected to this file)
+44. >> - append text to end of the file
+45. less - is a powerful pager program used to view the contents of a text file or the output of another command, one screen at a time
 
+Permissions:
+------------
+  d              rwx      rwx        -       x
+file type	owner    group		   other
+
+- + : add permission
+- - : remove permission
+- u - user
+- g - group
+- o - other
+- a - all users
+
+Binary format for permissions :
+7  0   0
+- 7 : user - 4(write) + 2(read) + 1(execute)
+- 0 : group - 0(no permisiion)
+- 0 : other users - 0(no permisiion)
+
+1. d : directory(file type)
+2. - : no permission
+3. r : read
+4. w : write
+5. x : execute
+ 
 When to use CLI over GUI?
 -----------------------
 - Work more efficient
@@ -597,9 +633,63 @@ VIM editor:
   	2. Insert mode : allows to enter text. By pressing i on opening the file in vim we enter into the insert mode
 - You can create any kind of file format by using this text editor
 
+======================================================================================================
 
-
-
+Shell Scripting:
+===============
+- It caontains a bunch of commands in file that need to be executed at a time to avoid repetitive work and those commands can be shared just by sharing the file. Such files are called as Shell Scripts.
+- Shell scripts have .sh file externsion
+- Shell : The program that interprets and executes the various commands that we type in the terminal and translates our command that the OS kernel can understand
+- sh : Bourne shell
+- Bash : Bourne again shell. Improved versions of sh and is default shell program for most Unix like systems. Bash is a shell program and It is a programming language.
+- #!/bin/bash : It is known as shebang. Basically it access the interpreter of the shell.
+- echo : It is similar to print statement
+- chmod +x setup.sh -> ./setup.sh (or) sh setup.sh : used to execute the bash file
+- variable_name=value : Assigns the value to the variable
+- $variable_name : used to reference the variables
+- variable_name=$(command) : Store output of a command in a variable
+- if [ -d "condition" ] then (after the statement) elif [ -d "condition" ] then (after the statement) else (after the statement) fi : -d means test if exists. It is for ifelse or elseif statement.
+- File test Operators - to test various properties associated with a file and below all are booleans(if yes returns as true)
+  	- -b file : cheks if file is a block special file
+  	- -c file : check if file is a character special file
+  	- -d file : check if file is a directory
+  	- -f file : check if file is a ordinary file
+  	- -g file : check if file has its group id bit set
+  	- -k file : check if file has its sticky
+  	- -p file : check if file is a named pipe
+  	- -t file : check if file descriptor is openend and associated with a terminal
+  	- -u file : check if file has its Set User id
+  	- -r file : check if file is readable
+  	- -w file : check if file is writable
+  	- -x file : check if file is executable
+  	- -s file : check if file has size greater than 0
+- Operator used on numbers:
+	- -eq : equal operator (condition becomes true)
+	- -ne : not equal operator(condition becomes true)
+	- -gt : checks if left operand is greater than the right operand
+	- -lt : checks if left operand is less than the right operand
+	- -ge : checks if left operand is greater than or equal to the right operand
+	- -le : checks if left operand is less than or equal to the right operand
+- Operator used on String :
+  	- = : equal operator(condition becomes true)
+  	- != : not equal operator(condition becomes true)
+  	- -z : checks if given string operand size is zero
+  	- -n : checks if given string operand size is non-zero
+  	- str : checks if str is not empty string
+- user_group=$1 : argument parameter that is passed to the bash script at the time of executing file $1 represents the 1st argument
+- coonfig_dir=$2 : argument parameter that is passed to the bash script at the time of executing file $2 represents the 1st argument
+- sh setup.sh bin config : examle of executing the file with argument parameters where 1st argument is bin and the 2nd argument is config
+- read -p user_pwd : used to read the argument parameters in the file and the user_pwd stores the password.The -p option allows you to specify a prompt.
+- echo "all parms $*" : argument parameter that is passed to the bash script at the time of executing file $* takes ample number of parameters
+- Loops(to execute a command repeated no. of times) in Linux :
+	- break : exist form a for, while, select or until loop 
+	- For loop :
+   		- for param in $* (next line) do (next line) echo $param (next line) done : execute all the parameters until nothing is left in the list. $# is a special variable that 		expands to the number of positional parameters (arguments) passed to a script or a function.
+        - While loop : Executes a set of commands repeatedly until some comdition is matched
+         	- while condition (next line) do (next line) statements to be executed if command is true (next line) done
+         	- Infinite loop : while true (next line) do (next line) read -p "enter score" $score (next line) sum=$sum+$score (next line) done
+         	
+       		
 
 
 
