@@ -689,7 +689,93 @@ Shell Scripting:
          	- while condition (next line) do (next line) statements to be executed if command is true (next line) done
          	- Infinite loop : while true (next line) do (next line) read -p "enter score" $score (next line) sum=$sum+$score (next line) done
          	
-       		
+Functions in Bash Scripting:
+----------------------------
+- Better overview when functions are named descriptive
+- Reuse code
+- Enable you to break down the overall functionality of a script into smaller, logical code blocks
+- This code block can then be referenced anywhere in the script multiple times
+- Ex : function score_game {
+   # write code here
+  }
+- score_game (to execute the function just use its name)
+- Parameters work as same in the function too
+- Don't use too many parameters
+- Apply the single Responsibility Principle
+- Declare variables with a meaningful name
+- Boolean : A datatype has only two values (True or False)
+- Returning values from functions is the beauty. Done by return keyword
+- result=$? captures the value of the return command or the last command
+
+============================================================================================
+
+Environmental Variables:
+=======================
+- Each user has his own environment and it is configured by setting preferences. These configurations should be isolated from other user environments.
+- These all are stored in Environmental variables (ex : SHELL, HOME, USER)
+- KEY=value pairs
+- Variables store information
+- These are avaialble for the whole environment
+- By convention, names are defined in UPPER CASE
+- User can change the environmental variable values
+- By using "printenv ls" command we can get the list of environment variables in our system
+- OS stores informations about the environment
+- We can create our own environment variables (EX: server or databse connection by using sensitive data)
+- Creation of environmental variable in linux : export DB_USER=dbuser (Not permanent)
+- Deleting environmental variable in linux :  unset DB_USER
+- Done through ./bashrc file (Permanent)
+
+============================================================================================
+
+NETWORKING:
+==========
+1. LAN : Local Area Network
+   	- Collection of devices connected together in one physical location
+   	- Each device has unique IP address (IP : Internet Protocol)
+   	- Devices communicate via these IP address
+   	- Ex : IP address : 172.16.0.0 (32 bit value) (1bit = 1 or 0) (00000000 => 0) (11111111 => 255(Octet))
+   	- IP addresses can range from 0.0.0.0 to 255.255.255.255
+   	- The ip addresses are know throught each other with the switch
+   	- Switch sits within the LAN
+   	- Faciliates the connection between all the devices with in the LAN (Computer to Computer)
+   	- Router is network device and sits between LAN and outside networks(WAN) (Computer to Server)
+   	- Devices in the LAN belong to same IP address range(Ex : 192.168.0.0(IP address) to 255.255.255.0(subnet mask))
+   	- Router connect devices on LAN and WAN **(Wide Area Network)** (Router == Gateway)
+   	- Allows networked devices to access the Internet
+   	- Subnet : Logical subdivision of an IP network
+   	- Subnetting : process of diving a network into two or more networks
+   	- Subnet mask dictates how many bits are fixed
+   	- CIDR : Classless Inter-Domain routing (192.168.x.x (16) or 192.168.0.x (24) bits are fixed)
+   	- Any device needs 3 pieces of data for communication : IP Address, Subnet, Gateway
+        - NAT : Network Administrator Trasilation (IP address of your system is not visible to outside network so while accessing web your laptops private IP address is replaced by router. It is known as NAT and it's a key functinality of a router)
+   	- Benifits of NAT : security and protection of devices within LAN, Reuse IP addresses
+   	- Firewall : It is a set of rules that protect the network from unauthorized access. A system that prevent unauthorized access from entering a private network. Using Firewall rules we can define which requests are allowed.
+   	- Port : Every device has set of ports. You can allow specific ports(doors). You cam allow specific ports(doors) AND specific IP address(guests). Different applications listen on specific ports and Standard ports for many applications (port 80 : webservers) (ports 3306 : MySql DB). For every application you need a port. Each port is unique on a device. If you try to restart an application on another port(which aldready contains an application) you will get an error. A firewall allows device IP address at port to be accessed and it is known as **Port Forwarding**.
+   	  
+2. DNS : Domain Name Service
+	- Humans are better in remembering words and names instead of numbers.
+	- Mapping IP addresses to Names
+	- The name gets traslated to IP address beacuse the servers only understand the numbers.
+	- DNS : Transaltes domain names to IP addresses
+	- Domain names have a hierarchical structure. Root Domains(.) -> Top Level Domains(.mil, .gov, etc) -> Name of your website(google, amazon, etc)
+ 	- You can buy a domain name, ex : mywebsite.com
+  	- ICANN : Internet Corporation for Assigned Names and Numbers. Manages the TLD development and architecture of the internet domain space. Authorizes Domain Name Registras, which register and assign domain names
+   	- Fully Qualified Domain name : courses.ready-with-rajesh.com.
+   	- DNS client is preinstalled in your computer -> Resolver -> Name Server -> TLD server (DNS resolution work)
+
+3. Networking Commands:
+	- ifconfig : gives ipaddress and etc
+ 	- netstat : shows how many active app running on web
+  	- ps aux : running apps and their ports
+   	- nslookup : allows you to query your DNS service
+   	- ping : checks whether connection is accesible or not
+
+============================================================================================
+
+SSH:
+===
+
+
 
 
 
