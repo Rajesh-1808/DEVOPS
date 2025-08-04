@@ -774,7 +774,23 @@ NETWORKING:
 
 SSH:
 ===
-
+- Used to copy file to remote server or install software on new server
+- SSH : Secure shell
+- SSH is a network protocol that gives users a secure way to access a computer over the internet
+- SSH refers also to the suite of utilities that implement that protocol
+- There are 2 ways to authenticate : 1.Username & Password    2.SSH Key Pair
+- Services, like jenkins often need to connect to another server via SSH
+- Communication must be explicitly be allowed through Firewall rule. SSH authentication comes afterthe connection.
+- SSH service runs by default on machine. By default, SSH server listens on port 22.
+- In firewall rule we allow access on port 22.
+- SSH is powerful and needs to be restrictedd to specific IP addresses
+- ssh UserName@SSHserver = Connect to a remote host
+- SSH key pair : check for ls .ssh/ and ssh-keygen -t rsa and save it in default location of /.shh : .ssh under home directory is the default location for your ssh key pair.
+- The above method is to create auser accesing the server without a pass key
+- known_hosts : lets the client authenticate the server to check that it isn't connecting to an impersonator
+- authorized_keys : lets the server authenticate the user
+- exit : command to exit the remote server
+- scp(secure copy) : Allows you to securely copy files and directories, Secure meaning files and password are encrypted 
 
 
 
