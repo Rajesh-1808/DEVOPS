@@ -792,9 +792,57 @@ SSH:
 - exit : command to exit the remote server
 - scp(secure copy) : Allows you to securely copy files and directories, Secure meaning files and password are encrypted 
 
+============================================================================================
 
+Version Control:
+===============
+- Developers working on the same code
+- Code is hosted centrally on the internet in code repository(ex:git), so that they can share the code
+- Every developer has an entire copy of the code locally
+- Code is fetched from remote repository and pushed to the code repository
+- Git knows how to merge changes automatically
+- Merge Conflicts : when same line was changed (ex : Git can't fix it alone must be solved manually)
+- Best practice is push and pull often from remote repositpory this is called Continous Integaration which means integrate your code changes frequently
+- Breaking changes doesn't affect you until you pulled the new code
+- Version Control keeps a history of changes. Every code change and file is tracked. We can revert commits. Each change labelled with commit message.
+- Git is the most popular version control tool. It has multiple parts :
+  	1. Remote Git Repository
+  	2. Git server
+  	3. UI : User interface
+  	4. Local Git repository
+  	5. Git log(history)
+  	6. Staging : changes to commit
+  	7. Git Clients : to execute git commands (git add, git commit, git push, git pull)
+- Different Git Repository to register like github and gitlab. Platform that host your repository. Companies have own git servers. Private vs Public repositories.
+- Public repositories are for open source projects and private are for personal use.
+- Git client needs to be ocnnected with remote platform
+- Download the git for CLI interface
+- You need to authenticate to GitHub/GitLab/....
+- Your SSH key must be addeed to the remote platform
+- Use command git clone git@gitlab....... : to create a clone of the repository from remote repository to local repository or system
+- GitHub/GitLab can authenticate us when pushing/pulling from repository without providing username/password everytime
+- There are 3 Stages of code in local repository :
+  	* Working directory
+  	* Staging area
+  	* Committed
+- git status : status of local git repository
+- git add : used to move changes from the working directory to the staging area, also known as index
+- git commit : used to save the staged changes in your local repository
+- git log : history of changes(commits), history from local repository
+- We can also push our perosnal code from our system to the Git repository using various commands like git push and git init
 
-
+Concept of Branches:
+--------------------
+- Master Branch = main branch which is created by default, when initializing a repository
+- The main concept of branches is to divide the work within the developers
+- Best practice is 1 branch per bugfix or feature. So that developers can commit without worrying to break main branch. Merge Complete branch to master branch so that new feature can be deployed.
+- Big feature branches long open, increases the chance of merge conflicts.
+- With branches you achieve a stable main(master) branch which is ready for deployment
+- A branch is based on master and branch starts from same codebase.
+- git checkout -b <branch name> : creating and switching to new branch to switch locally in CLI
+- There are two main branches :
+  	* Master Branch : Ready for production. Only master branch for continuous integration/delivery
+  	* Master + Developer Branch : Intermediary Master. During sprint features and bugfixes are merged into. At end of sprint it merge into master. Pipeline is triggered whenever feature/bugfix code is merged into master. 
 
 
 
