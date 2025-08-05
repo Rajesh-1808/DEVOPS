@@ -842,8 +842,29 @@ Concept of Branches:
 - git checkout -b <branch name> : creating and switching to new branch to switch locally in CLI
 - There are two main branches :
   	* Master Branch : Ready for production. Only master branch for continuous integration/delivery
-  	* Master + Developer Branch : Intermediary Master. During sprint features and bugfixes are merged into. At end of sprint it merge into master. Pipeline is triggered whenever feature/bugfix code is merged into master. 
+  	* Master + Developer Branch : Intermediary Master. During sprint features and bugfixes are merged into. At end of sprint it merge into master. Pipeline is triggered whenever feature/bugfix code is merged into master.
+- Merge Requests:
+	- Best practice is that Other developer reviews code changes before merging
+	- Master branch must be stable and ready for production
+	- Use cases : big features, junior developer or expertise in different area and great chance to learn and grow from each other
+- Delete Requests:
+	- Leave the branch or delete it
+   	- Delete branch after merging and create new branch when needed
+   	- Delete the branch in remote repository
+- git pull = git fetch + git merge
+- Add .gitignore file to your project(root directory). To exclude certain folders or files from git to be tracked
+- git stash : save current changes for later. git stash pop : get the changes back
+- Making changes to current branch. Notice that something isn't working anymore. So hide changes temporarily away to test if it works without my code changes. Bring changes back to my local working directory. 
+- git log : history
+- git checkout<commit hash> : going back in history
+- git commit --amend : changing commits(changes last commit)
+- git reset --hard and --soft and git revert : undoing commits (--soft means to keep the changes in working directory and --head means discarding all the changes)
+- git merge : used to combine changes from one branch into another
 
+Git for Devops:
+--------------
+- Infrastructure as code like if we have many kubernetes configuration files and for deployment to kubernetes we use Terraform for automation and Ansible for deployment and also some bash and python scripts. So all these files should be : tracked - history of changes and securely stored in one place and shearable for devops team
+- CI/CD Pipleline and Build Automation : Checkout code, test and build application, etc. Need integration for the build automation tool with application git repository. You need to setup integration with build automation tools and git repository.
 
 
 	
