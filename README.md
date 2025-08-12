@@ -866,8 +866,28 @@ Git for Devops:
 - Infrastructure as code like if we have many kubernetes configuration files and for deployment to kubernetes we use Terraform for automation and Ansible for deployment and also some bash and python scripts. So all these files should be : tracked - history of changes and securely stored in one place and shearable for devops team
 - CI/CD Pipleline and Build Automation : Checkout code, test and build application, etc. Need integration for the build automation tool with application git repository. You need to setup integration with build automation tools and git repository.
 
+============================================================================================
 
-	
+Databases:
+=========
+- Databases are used to presist data.
+- Developers need database for local development. Each developer install mysql DB locally. Each developer has own DB with own test data (can't mess with someone else's data. Start from empty DB and if need realstic test data).
+- DB hosted remotely and no need for local installation and strat coding right away. Test data avaialble right from the start. Can't play around without effecting others because every developer uses the same DB remotely.
+- In your application code you configure that DB connectivity. Each programming language has a library/modules for DB connection. You have to tell the library, which DB to talk and how to Authenticate with that DB through Database Endpoint and Credentials.
+- DB endpoint & credential should not be hardcoded. Define in 1 place as environment variables and configure from outside. Depending on environment, connect to different DB. Each has different endpoints and credentials (PROD more secured). Define variable in code and set endpoint/credentials from outside each environment. pass environment variables on application start-up from Propeties files which is most recommended.
+- Logging level : Log more in development mode and Log less in production mode(e.g. only error)
+- Before App is deployed, we need to install and configure database. On the same server or a separate DB server.
+- Data is important!! so Replicate(Make an exact copy), regular backups, performs under high load, restore DB. (Devops engineer handles all these)
+- Database Types :
+  	- Key value Databases(Redis, Memcached, etcd from Kubernetes) : unique key, no joins, Stores in memory,limited storage, they are very fast,  nor primary DB. Best for caching, Message Queue.
+  	- Wide Column Databases(Cassandra, Apchache HBase) : Schemaless, Scalable, no joins, Queries similar to SQL, limited compared to relational DB. Best for Time-Series, IOT records.
+  	- Document Databases(MongoDB, DynamoDB, CouchDB) : Schemaless, no joins, slower Writes(updation), faster to read, denormalized, easy to get started, primary DB. Best for Mobile Apps, Game Apps and most Apps.
+  	- Relational Databases(MySQL, PostgreSQl) : To store structured data itis most used. Schema and data types needs to be created first(Schema). SQL(Structured Query language). Normalizing to avoid duplicated data(Nomalized). ACID(Atomicity, Consistency, Isolation, Durability) ensures that No half-changes are updated in  database, Either all changes get applied or none are applied. Difficult to scale.
+  	- Graph Databases(Neo4j, Dgraph) : Directly connect entities through Noded and Edges where Edges are the realtionships. Easier to Query. Best for Graphs, Patterns.
+  	- Search Databases(ElasticSearch, Solr) : Search Database through massive data entries. Full text search in efficient and fast way. Similar to document-oriented databse.
+
+============================================================================================
+
 
 
 
