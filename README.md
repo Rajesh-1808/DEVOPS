@@ -888,6 +888,25 @@ Databases:
 
 ============================================================================================
 
+Build and Package Manager Tools:
+===============================
+- App needs to be deployed on a production server.
+- Application code and its dependencies are moved to the server.
+- Package application into a single movable file which is commonly known as Artifact.
+- Packaging = "Building the code" (Compiling, Compress hundreds into single file)
+- Keep artifact in storage to deploy it multiple times, have backup etc.
+- All these artifcats are stored at Artifact Repository.
+- Artifact file looks different for each programming language (ex: JAR = java archive)
+
+Windows File system:
+--------------------
+- Contains Multiple roots, called drives, within drive, same hierarchy of folders and files.
+- Note everything is a file in Windows! E.g. devices are not treated as files.
+- Windows uses backslashes for path.
+- App files aren't into different folders when installed.
+- Different commands on windows, because of different shell programs (chdir=pwd, time=date, cd=cd, md=mkdir, echo=echo)
+- As a consewuence, window scripts have also a different syntax.
+- Windows is more optimized for GUI.
 
 
 
