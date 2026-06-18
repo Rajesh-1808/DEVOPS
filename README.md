@@ -103,6 +103,33 @@ Benefits of DevOps:
 
 =====================================================================================
 
+Continuous Development : 
+----------------------
+This stge involves commiting code to version control tools like Git oe SVN for maintainig the different versions of the code, and tools like Ant, Maven, Gradle for building / packaging the code into an executbale file that can be forwarded to the QA's for testing.
+Ex: Git
+
+Continuous Integration :
+----------------------
+This stage is critical in the whle Devops lifecycle. It deals with the integrayting the different stages of the Devops lifecycle, and is therefore the key in automating the whooe Devops process.
+Ex : Jenkins
+
+Continuous Deployment :
+---------------------
+In this stage teh code is built, the environment or the application is containerized and is pushed on to the desired serverr. The key processses in this stage are configuration Management, virtualiztion and caonatinerization.
+Ex: Docker, Puppet
+
+Continuous Testing : 
+------------------
+This stage deals with automated testinf of the application pushed by the developer. If there is an error, the message is sent to the integration tool, this tool in turn notifies the developer of the error. If the test was a success, the message is sent to integartion tool which pusges the build on the production server.
+Ex: Selenium
+
+Continuous Monitoring :
+---------------------
+This stage continuously monitors the deployed application for bug or crashes.It can also be setup to collect user feedbackThe collected data is then se t to the developers to imporve the application.
+Ex: Nagios
+
+=====================================================================================
+
 CI and CD : 
 =========
 -> CI/CD is a DevOps method that helps you automate the steps involved in developing, testing, and deploying software.
